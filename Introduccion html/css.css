@@ -1,0 +1,119 @@
+/* RESET BÁSICO */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* CUERPO */
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f6f9;
+color: #333;
+padding: 20px;
+}
+
+/* TÍTULOS */
+h1, h2, h3, h4, h5, h6 {
+margin: 15px 0;
+color: #2c3e50;
+}
+
+/* PÁRRAFOS */
+p {
+margin: 10px 0;
+line-height: 1.6;
+}
+
+/* ENLACES */
+a {
+color: #3498db;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+/* LISTAS */
+ul, ol {
+margin: 10px 20px;
+}
+
+li {
+margin: 5px 0;
+}
+
+/* BLOQUES PRE Y CODE */
+pre {
+background-color: #1e1e1e;
+color: #00ffcc;
+padding: 10px;
+border-radius: 5px;
+overflow-x: auto;
+}
+
+code {
+font-family: monospace;
+}
+
+/* IMÁGENES */
+img {
+margin: 10px 0;
+border-radius: 10px;
+max-width: 100%;
+}
+
+/* VIDEO E IFRAME */
+video, iframe {
+margin: 15px 0;
+border-radius: 10px;
+}
+
+/* TABLA */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+caption {
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+th, td {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: center;
+}
+
+th {
+background-color: #3498db;
+color: white;
+}
+
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+/* FOOTER TABLA */
+tfoot td {
+font-style: italic;
+background-color: #ecf0f1;
+}
+
+/* HR */
+hr {
+margin: 20px 0;
+border: 1px solid #ccc;
+}
+
+/* SECCIÓN DESTACADA */
+#planetasExteriores {
+background-color: #3498db;
+color: white;
+padding: 10px;
+border-radius: 5px;
+}

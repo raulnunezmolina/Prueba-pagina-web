@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  
+<form action="">
+  <label for="nombre">Nombre:</label>
+  <input id="nombre" name="nombre" type="text" placeholder="Nombre aqui">
+  <fieldset>
+    <legend>Género:</legend>
+    <input id="generoH" name="genero" type="radio">
+    <label for="generoH">Hombre</label>
+    <input id="generoM" name="genero" type="radio">
+    <label for="generoM">Mujer</label>
+    <input id="generoO" name="genero" type="radio">
+    <label for="generoO">Otro</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Lenguajes de programación que conoces</legend>
+    <label for="l1">
+      <input id="l1" name="l1" type="checkbox">Python
+    </label>
+    <label for="l2">
+      <input id="l2" name="l2" type="checkbox">C
+    </label>
+    <label for="l3">
+      <input id="l3" name="l3" type="checkbox">Java
+    </label>
+    <label for="l4">
+      <input id="l4" name="l1" type="checkbox">JavaScript
+    </label>
+  </fieldset>
+
+</form>
+<form>
+ <input list="lenguajes">
+ <datalist id="lenguajes">
+    <option value="Java">
+    <option value="C">
+    <option value="Python">
+    <option value="Perl">
+    </datalist>
+ <button type="submit">Enviar</button>
+</form>
+
+<form>
+    <label for="male">Nombre</label>
+    <input type="text">
+    <button type="submit">Enviar</button>
+</form>
+<br>
+<hr>
+<h3>Ejercicio 1</h3>
+
+<form>
+    <label for="nombre">nombre</label>
+    <input id="nombre" name="nombre" type="text">
+    <br>
+    <label for="nombre">correo</label>
+    <input id="generoH" name="nombre" type="email">
+    <br>
+    <label for="nombre">contraseña</label>
+    <input id="generoM" name="nombre" type="password">
+    <br><br>
+    <fieldset>
+        <legend>Genero</legend>
+        <label for="generoh">hombre</label>
+        <input id="generoH" name="genero" type="radio">
+        <label for="generom">mujer</label>
+        <input id="generoH" name="genero" type="radio">
+    </fieldset>
+    <br><br>
+    <label for="fecha nacimiento">fecha nacimiento</label>
+    <input id="fecha_nacimineto" name="fecha_nacimiento" type="date">
+    <br><br>
+    <label for="num hijos">numeor de hijos</label>
+    <input id="numHijos" name="numHijos" type="number" value="0">
+    <br><br>
+    <label for="avatar">subir avatar</label>
+    <input id="avatar" name="avatar" type="file">
+    <br><br>
+    <label for="provincia">selecciona tu provincia</label>
+    <input id="provincia" name="provincia">
+    <select id="provincia" name="provincia">
+        <option value="gr">Granada</option>
+        <option id="ma">Málaga</option>
+    </select>
+    <br><br>
+    <fieldset>
+        <legend>Lenguajes de programación que conoces</legend>
+        <label for="l1">
+            <input id="l1" name="l1" type="checkbox">Informática
+        </label>
+        <label for="l2">
+            <input id="l2" name="l2" type="checkbox">Criptos
+        </label>
+        <label for="l3">
+            <input id="l3" name="l3" type="checkbox">Ciclismo
+        </label>
+        <label for="l4">
+            <input id="l4" name="l1" type="checkbox">Escalada
+        </label>
+    </fieldset>
+    <br> <br>
+
+    <label for="lengua">Selecciona el lenguaje que quieres aprender</label>
+    <input list="lengua">
+    <datalist id="lengua">
+        <option value="Python">
+        <option value="Perl">
+    </datalist>
+    <br><br>
+
+    <label for="descripcion">cuentanos algo sobre tu vida</label><br>
+    <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
+    <br>
+    <input type="submit" value="enviar">
+</form>
+<br><br>
+
+<hr>
+<h3>Ejercicio 2</h3>
+<form>
+    <label for="nombre">nombre</label>
+    <input id="nombre" name="nombre" type="text" minlength="3" maxlength="30">
+    <br><br>
+
+    <label for="edad">edad</label>
+    <input id="edad" name="number" type="number" required min="18" step="1">
+    <br><br>
+
+    <label for="gs">Grado de satisfacción</label>
+    <input id="gs" name="gs" type="range" required min="0" max="5" step="1">
+    <br><br>
+
+    <label for="tlf">Número de teléfono</label>
+    <input id="tlf" name="tlf" type="text" pattern="[6-7]{1}[0-9]{8}" placeholder="El. 677777777">
+    <br><br>
+
+    <input id="terminos" name="terminos" type="checkbox" required>
+    <label for="terminos">Acepto los términos de uso</label>
+    <br><br>
+
+    <input type="submit" value="enviar">
+    <br><br>
+    
+</form>
+<hr>
+<h3>Ejercicio 4</h3>
+
+
+<form>
+    <label for="nombre" required>nombre</label>
+    <input id="nombre" name="nombre" type="text" requered minlength="1" maxlength="20" required>
+    <br>
+    <label for="nombre" required>correo</label>
+    <input id="nombre" name="nombre" type="email"requered minlength="1" maxlength="20" required>
+    <br>
+    <label for="nombre" requered>contraseña</label>
+    <input id="nombre" name="nombre" type="password" requered minlength="8" maxlength="16" required>
+    <br><br>
+    <fieldset>
+        <legend>Genero</legend>
+        <label for="generoh">hombre</label>
+        <input id="generoH" name="genero" type="radio" required>
+        <label for="generom">mujer</label>
+        <input id="generoH" name="genero" type="radio">
+    </fieldset>
+    <br><br>
+    <label for="fecha nacimiento">fecha nacimiento</label>
+    <input id="fecha_nacimineto" name="fecha_nacimiento" type="date" required>
+    <br><br>
+    <label for="num hijos">numero de hijos</label>
+    <input id="numHijos" name="numHijos" type="number" value="0" required min="0" max="10">
+    <br><br>
+    <label for="avatar">subir avatar</label>
+    <input id="avatar" name="avatar" type="file">
+    <br><br>
+    <label for="provincia">selecciona tu provincia</label>
+    <input id="provincia" name="provincia">
+    <select id="provincia" name="provincia" required>
+        <option value="gr">Granada</option>
+        <option id="ma">Málaga</option>
+    </select>
+    <br><br>
+    <fieldset>
+        <legend>Lenguajes de programación que conoces</legend>
+        <label for="l1">
+            <input id="l1" name="l1" type="checkbox">Informática
+        </label>
+        <label for="l2">
+            <input id="l2" name="l2" type="checkbox">Criptos
+        </label>
+        <label for="l3">
+            <input id="l3" name="l3" type="checkbox">Ciclismo
+        </label>
+        <label for="l4">
+            <input id="l4" name="l1" type="checkbox">Escalada
+        </label>
+    </fieldset>
+    <br> <br>
+
+    <label for="lengua">Selecciona el lenguaje que quieres aprender</label>
+    <input list="lengua" required>
+    <datalist id="lengua">
+        <option value="Python">
+        <option value="Perl">
+    </datalist>
+    <br><br>
+
+    <label for="descripcion">cuentanos algo sobre tu vida</label><br>
+    <textarea id="descripcion" name="descripcion" rows="4" cols="50" maxlength="50" required></textarea>
+    <br>
+    <input type="submit" value="enviar">
+    <br><br>
+</form>
+
+
+<hr>
+<h3>Ejercicio 4</h3>
+<form>
+    <label for="nombre">Nombre</label required>
+    <input id="nombre" name="Nombre" type="text" required>
+    <br><br>
+    <label for="nombre">Correo</label>
+    <input id="nombre" name="nombre" type="email" required>
+    <br><br>
+    <label for="planeta">Escribe tu planeta desde el que nos contactas</label>
+    <select id="planeta" name="planeta" required>
+        <option value="" disabled selected>Elige un planeta</option>
+        <option id="mt">Marte</option>
+        <option id="np">Neptuno</option>
+        <option id="un">Urano</option>
+        <option id="vn">Venus</option>
+    </select>
+    <br><br>
+    <label for="asunto">Asunto por el que nos contactas</label>
+    <br>
+    <textarea id="asunto" name="asunto" rows="4" cols="50" maxlength="100" required></textarea>
+    <br><br>
+    <label for="perfil">Subir foto tuya</label>
+    <input id="perfil" name="perfil" type="file">
+    <br><br>
+    <input id="terminosInvasion" name="terminosInvasion" type="checkbox" required>
+    <label for="terminosInvasion">Acepta los terminos de riesgo por invasión</label>
+    <br><br>
+    <input type="submit" value="enviar">
+
+    
+</form>
+
+</body>
+</html>
